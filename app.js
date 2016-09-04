@@ -16,7 +16,8 @@ var commentRoutes = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://yc:Fightformylife_1@ds019946.mlab.com:19946/yelpcamp_edison");
 app.use(require("express-session")({
    secret : "didi", 
    resave : false,
